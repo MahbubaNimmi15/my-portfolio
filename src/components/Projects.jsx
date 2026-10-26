@@ -14,14 +14,13 @@ export const projects = [
     stack: ["React", "JavaScript", "Tailwind CSS"],
 
     liveLink: "https://fitlog-ten-ruddy.vercel.app/",
-
     githubLink: "https://github.com/MahbubaNimmi15/fitlog",
 
     challenges:
-      "Creating a responsive fitness interface, organizing workout information, and managing interactive workout features are important challenges in this type of application.",
+      "One of the main development challenges was organizing workout information into a clear and user-friendly interface. Building responsive layouts for different screen sizes and managing interactive workout features also required careful planning and testing.",
 
     futurePlans:
-      "Add personalized workout goals, workout history, progress charts, and advanced fitness tracking features.",
+      "In the future, I plan to introduce personalized fitness goals, workout history, visual progress charts, and advanced fitness tracking features to improve the overall user experience.",
   },
 
   {
@@ -35,14 +34,13 @@ export const projects = [
     stack: ["React", "JavaScript", "Tailwind CSS"],
 
     liveLink: "https://bazar-dor-navy.vercel.app/",
-
     githubLink: "https://github.com/MahbubaNimmi15/bazar-dor",
 
     challenges:
-      "Organizing product information, displaying market prices clearly, and designing responsive product layouts are important challenges for a price information application.",
+      "A key development challenge was organizing product and market price information in a way that users could easily understand. Designing responsive product layouts and maintaining a clear interface across different devices were also important considerations.",
 
     futurePlans:
-      "Improve product searching, add more categories, introduce market price comparisons, and display historical price trends.",
+      "I plan to improve product search, add more product categories, introduce price comparisons between markets, and include historical price trends to make the application more useful.",
   },
 
   {
@@ -63,14 +61,13 @@ export const projects = [
     ],
 
     liveLink: "https://dev-stack-rho.vercel.app/",
-
     githubLink: "https://github.com/MahbubaNimmi15/dev-stack",
 
     challenges:
-      "Managing selected technologies with React state, preventing duplicate selections, loading technology information from JSON data, and keeping the interface responsive are important implementation challenges.",
+      "Managing selected technologies using React state was an important implementation challenge. The application also required handling duplicate selections, displaying technology information from JSON data, and maintaining a responsive and interactive interface.",
 
     futurePlans:
-      "Add technology comparisons, advanced search filters, saved technology stacks, and personalized recommendations.",
+      "Future improvements include technology comparisons, advanced search and filtering, the ability to save personalized technology stacks, and recommendations based on user preferences.",
   },
 ];
 
