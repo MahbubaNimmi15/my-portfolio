@@ -25,7 +25,7 @@ function Contact() {
             className="flex items-center gap-3 hover:text-cyan-400 break-all"
           >
             <Mail size={23} />
-            your-email@example.com
+           mahbubanimmi1529@gmail.com
           </a>
 
           {/* Phone */}
@@ -34,7 +34,7 @@ function Contact() {
             className="flex items-center gap-3 hover:text-cyan-400"
           >
             <Phone size={23} />
-            +8801XXXXXXXXX
+            +88017155233876
           </a>
 
           {/* Social Media */}

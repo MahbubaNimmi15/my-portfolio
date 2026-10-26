@@ -7,97 +7,124 @@ export const projects = [
     name: "FitLog",
     image: "/projects/fitlog.png",
     description:
-      "A fitness tracking application for organizing and monitoring fitness activities.",
-    stack: ["Add actual technologies used"],
+      "A fitness tracking web application designed to help users organize fitness activities and track their progress.",
+    stack: [],
     liveLink: "https://fitlog-ten-ruddy.vercel.app/",
     githubLink: "",
     challenges:
-      "Add the actual challenges faced while building FitLog.",
+      "Details about the challenges faced during development will be added.",
     futurePlans:
-      "Add your planned improvements for FitLog.",
+      "Potential improvements include enhanced progress tracking and additional fitness features.",
   },
+
   {
     id: "bazar-dor",
     name: "Bazar-Dor",
     image: "/projects/bazar-dor.png",
     description:
-      "A market price information application for exploring product prices.",
-    stack: ["Add actual technologies used"],
+      "A web application for exploring product prices and accessing market information in an organized interface.",
+    stack: [],
     liveLink: "https://bazar-dor-navy.vercel.app/",
     githubLink: "",
     challenges:
-      "Add the actual challenges faced while building Bazar-Dor.",
+      "Details about the challenges faced during development will be added.",
     futurePlans:
-      "Add your planned improvements for Bazar-Dor.",
+      "Potential improvements include better search, more categories and price comparisons.",
   },
+
   {
-    id: "task-manager",
-    name: "Task Manager",
-    image: "/projects/task-manager.png",
+    id: "dev-stack",
+    name: "Dev Stack",
+    image: "/projects/dev-stack.png",
     description:
-      "A task management application for adding, completing, and deleting tasks.",
-    stack: ["React", "JavaScript", "Tailwind CSS"],
-    liveLink: "",
+      "A web application project. Its specific features and purpose will be added after reviewing the source code.",
+    stack: [],
+    liveLink: "https://dev-stack-rho.vercel.app/",
     githubLink: "",
     challenges:
-      "Managing task state and saving tasks in localStorage.",
+      "Details about the challenges faced during development will be added.",
     futurePlans:
-      "Add task editing, priorities, and deadlines.",
+      "Future improvements will be added based on the application's features.",
   },
 ];
+
+function ProjectImage({ project }) {
+  return (
+    <div className="h-52 bg-slate-700 overflow-hidden relative">
+      <img
+        src={project.image}
+        alt={`${project.name} screenshot`}
+        className="w-full h-full object-cover"
+        onError={(e) => {
+          e.currentTarget.style.display = "none";
+          e.currentTarget.nextElementSibling.style.display =
+            "flex";
+        }}
+      />
+
+      <div
+        style={{ display: "none" }}
+        className="absolute inset-0 items-center justify-center text-slate-300 text-center p-4"
+      >
+        Screenshot not found
+      </div>
+    </div>
+  );
+}
 
 function Projects() {
   return (
     <section
       id="projects"
-      className="bg-slate-950 py-20 px-5 text-white scroll-mt-24"
+      className="bg-slate-950 text-white py-20 px-5 scroll-mt-24"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           My <span className="text-cyan-400">Projects</span>
         </h2>
+
+        <p className="text-gray-400 text-center mb-12">
+          Explore some of my recent projects.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition"
+              className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-400 hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="h-48 bg-slate-700">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = "none";
-                  }}
-                />
-              </div>
+              <ProjectImage project={project} />
 
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3">
                   {project.name}
                 </h3>
 
-                <p className="text-gray-300 text-sm leading-7 mb-4">
+                <p className="text-gray-300 text-sm leading-7 mb-5 min-h-28">
                   {project.description}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.stack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-slate-900 text-cyan-400 text-xs px-3 py-2 rounded-lg"
-                    >
-                      {tech}
+                  {project.stack.length > 0 ? (
+                    project.stack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="bg-slate-900 text-cyan-400 text-xs px-3 py-2 rounded-lg"
+                      >
+                        {tech}
+                      </span>
+                    ))
+                  ) : (
+                    <span className="text-sm text-gray-400">
+                      Technology details coming soon
                     </span>
-                  ))}
+                  )}
                 </div>
 
                 <div className="flex flex-wrap gap-3">
                   <Link
                     to={`/projects/${project.id}`}
-                    className="bg-cyan-500 text-slate-950 px-5 py-3 rounded-lg font-semibold hover:bg-cyan-400"
+                    className="bg-cyan-500 text-slate-950 px-5 py-3 rounded-lg font-semibold hover:bg-cyan-400 transition"
                   >
                     View Details
                   </Link>
@@ -107,7 +134,7 @@ function Projects() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="border border-cyan-400 text-cyan-400 px-5 py-3 rounded-lg"
+                      className="border border-cyan-400 text-cyan-400 px-5 py-3 rounded-lg hover:bg-cyan-400 hover:text-slate-950 transition"
                     >
                       Live Demo
                     </a>
