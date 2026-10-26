@@ -34,7 +34,7 @@ function Contact() {
             className="flex items-center gap-3 hover:text-cyan-400"
           >
             <Phone size={23} />
-            +88017155233876
+            +8801750184501
           </a>
 
           {/* Social Media */}
