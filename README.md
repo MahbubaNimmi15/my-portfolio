@@ -1,16 +1,84 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Mahbuba Ferdous Nemme — Portfolio
 
-Currently, two official plugins are available:
+A responsive personal portfolio website showcasing my frontend development skills, projects, education, and experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Portfolio
 
-## React Compiler
+https://my-portfolio-a6p9.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About Me
 
-## Expanding the Oxlint configuration
+I'm Mahbuba Ferdous Nemme, an aspiring Frontend Web Developer.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+I enjoy building modern, responsive, and user-friendly web applications using React, JavaScript, and Tailwind CSS.
+
+## Technologies
+
+- React
+- JavaScript
+- Tailwind CSS
+- React Router
+- Vite
+
+## Features
+
+- Responsive Navbar
+- Professional Profile and Introduction
+- Clickable Resume Button
+- Social Media Links
+- About Me Section
+- Skills, Education, and Experience
+- Three Featured Projects
+- Individual Project Details Pages
+- Live Demo and GitHub Links
+- Contact Section
+- Responsive Layout
+
+## Featured Projects
+
+### FitLog
+
+Fitness web application.
+
+Live: https://fitlog-ten-ruddy.vercel.app/
+
+GitHub: https://github.com/MahbubaNimmi15/fitlog
+
+### Bazar-Dor
+
+Market product price information application.
+
+Live: https://bazar-dor-navy.vercel.app/
+
+GitHub: https://github.com/MahbubaNimmi15/bazar-dor
+
+### Dev Stack
+
+Developer technology explorer.
+
+Live: https://dev-stack-rho.vercel.app/
+
+GitHub: https://github.com/MahbubaNimmi15/dev-stack
+
+## Run Locally
+
+bash
+npm install
+npm run dev
+
+
+## Production Build
+
+bash
+npm run build
+
+## Deployment
+
+Deployed on Vercel.
+
+## Contact
+
+GitHub: https://github.com/MahbubaNimmi15
+
+LinkedIn: https://www.linkedin.com/in/mahbuba-ferdous-nemme-1b7985335/
