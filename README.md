@@ -1,7 +1,7 @@
 
-# Mahbuba Ferdous Nemme — Portfolio
+# Mahbuba Ferdous Nemme | Portfolio
 
-A responsive personal portfolio website showcasing my frontend development skills, projects, education, and experience.
+A modern, responsive personal portfolio website showcasing my frontend development skills, education, experience, and projects.
 
 ## Live Portfolio
 
@@ -9,11 +9,17 @@ https://my-portfolio-a6p9.vercel.app/
 
 ## About Me
 
-I'm Mahbuba Ferdous Nemme, an aspiring Frontend Web Developer.
+Hi! I'm Mahbuba Ferdous Nemme, an aspiring Frontend Web Developer who loves transforming creative ideas into beautiful, responsive, and user-friendly websites.
 
-I enjoy building modern, responsive, and user-friendly web applications using React, JavaScript, and Tailwind CSS.
+My programming journey started with curiosity about how websites work. That curiosity gradually turned into a passion for creating digital experiences that are not only visually appealing but also practical and easy to use.
 
-## Technologies
+I enjoy working with HTML, CSS, JavaScript, React, and Tailwind CSS, experimenting with modern UI designs, and improving my problem-solving skills through real-world projects.
+
+For me, web development is more than writing code. It's about learning something new, solving meaningful problems, and bringing ideas to life—one component at a time.
+
+My goal is simple: Keep learning, keep building, and become a developer who creates experiences people genuinely enjoy using.
+
+## Technologies Used
 
 - React
 - JavaScript
@@ -23,39 +29,41 @@ I enjoy building modern, responsive, and user-friendly web applications using Re
 
 ## Features
 
-- Responsive Navbar
-- Professional Profile and Introduction
+- Fully Responsive Navbar
+- Hero Section with Professional Photo
+- Frontend Developer Introduction
 - Clickable Resume Button
-- Social Media Links
+- GitHub, LinkedIn and Facebook Links
 - About Me Section
-- Skills, Education, and Experience
+- Skills Section
+- Education and Experience
 - Three Featured Projects
 - Individual Project Details Pages
-- Live Demo and GitHub Links
+- Live Demo and GitHub Buttons
 - Contact Section
-- Responsive Layout
+- Footer
 
-## Featured Projects
+## Projects
 
-### FitLog
+### 1. FitLog
 
-Fitness web application.
+A fitness web application for exploring workouts and organizing fitness activities.
 
 Live: https://fitlog-ten-ruddy.vercel.app/
 
 GitHub: https://github.com/MahbubaNimmi15/fitlog
 
-### Bazar-Dor
+### 2. Bazar-Dor
 
-Market product price information application.
+A web application for browsing product prices and market information.
 
 Live: https://bazar-dor-navy.vercel.app/
 
 GitHub: https://github.com/MahbubaNimmi15/bazar-dor
 
-### Dev Stack
+### 3. Dev Stack
 
-Developer technology explorer.
+An interactive developer technology explorer.
 
 Live: https://dev-stack-rho.vercel.app/
 
@@ -63,22 +71,26 @@ GitHub: https://github.com/MahbubaNimmi15/dev-stack
 
 ## Run Locally
 
-bash
-npm install
-npm run dev
+Install dependencies:
 
+    npm install
 
-## Production Build
+Start development server:
 
-bash
-npm run build
+    npm run dev
+
+Create production build:
+
+    npm run build
 
 ## Deployment
 
-Deployed on Vercel.
+This portfolio is deployed on Vercel.
 
-## Contact
+## Connect With Me
 
 GitHub: https://github.com/MahbubaNimmi15
 
 LinkedIn: https://www.linkedin.com/in/mahbuba-ferdous-nemme-1b7985335/
+
+Facebook: https://www.facebook.com/share/18NzpMSHqk/
