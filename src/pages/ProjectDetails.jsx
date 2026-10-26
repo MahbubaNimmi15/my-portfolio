@@ -1,23 +1,24 @@
 
 import { Link, useParams } from "react-router-dom";
-import { projects } from "../components/Projects";
+import { projects } from "../components/Projects.jsx";
 
 function ProjectDetails() {
   const { id } = useParams();
 
-  const project = projects.find(
-    (item) => item.id === id
-  );
+  const project = projects.find((item) => item.id === id);
 
   if (!project) {
     return (
-      <section className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center gap-5">
+      <section className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center gap-5 px-5">
         <h1 className="text-3xl font-bold">
           Project Not Found
         </h1>
 
-        <Link to="/" className="text-cyan-400">
-          Back to Home
+        <Link
+          to="/#projects"
+          className="text-cyan-400 hover:underline"
+        >
+          ← Back to Projects
         </Link>
       </section>
     );
@@ -26,6 +27,8 @@ function ProjectDetails() {
   return (
     <section className="min-h-screen bg-slate-950 text-white py-16 px-5">
       <div className="max-w-5xl mx-auto">
+
+        {/* Back Button */}
         <Link
           to="/#projects"
           className="inline-block text-cyan-400 mb-8 hover:underline"
@@ -33,24 +36,22 @@ function ProjectDetails() {
           ← Back to Projects
         </Link>
 
+        {/* Project Name */}
         <h1 className="text-3xl md:text-4xl font-bold mb-8">
           {project.name}
         </h1>
 
         {/* Project Screenshot */}
-        <div className="w-full bg-slate-800 rounded-xl overflow-hidden mb-10">
+        <div className="w-full bg-slate-800 rounded-2xl overflow-hidden mb-10">
           <img
             src={project.image}
             alt={`${project.name} screenshot`}
-            className="w-full max-h-[450px] object-contain"
-            onError={(e) => {
-              e.currentTarget.style.display = "none";
-            }}
+            className="w-full max-h-112.5 object-contain"
           />
         </div>
 
         {/* Technology Stack */}
-        <div className="mb-9">
+        <div className="mb-10">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4">
             Technology Stack
           </h2>
@@ -60,7 +61,7 @@ function ProjectDetails() {
               {project.stack.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-slate-800 px-4 py-2 rounded-lg text-sm"
+                  className="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm"
                 >
                   {tech}
                 </span>
@@ -68,13 +69,13 @@ function ProjectDetails() {
             </div>
           ) : (
             <p className="text-gray-400">
-              Technology information will be added.
+              Technology information not added yet.
             </p>
           )}
         </div>
 
-        {/* Description */}
-        <div className="mb-9">
+        {/* Project Description */}
+        <div className="mb-10">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4">
             Project Description
           </h2>
@@ -84,14 +85,14 @@ function ProjectDetails() {
           </p>
         </div>
 
-        {/* Links */}
+        {/* Live and GitHub Buttons */}
         <div className="flex flex-wrap gap-4 mb-10">
           {project.liveLink && (
             <a
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-cyan-500 text-slate-950 px-5 py-3 rounded-lg font-semibold hover:bg-cyan-400"
+              className="bg-cyan-500 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-400 transition"
             >
               Live Project
             </a>
@@ -102,7 +103,7 @@ function ProjectDetails() {
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-cyan-400 text-cyan-400 px-5 py-3 rounded-lg"
+              className="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400 hover:text-slate-950 transition"
             >
               Client GitHub
             </a>
@@ -110,7 +111,7 @@ function ProjectDetails() {
         </div>
 
         {/* Challenges */}
-        <div className="mb-9">
+        <div className="mb-10">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4">
             Challenges Faced
           </h2>
@@ -130,6 +131,7 @@ function ProjectDetails() {
             {project.futurePlans}
           </p>
         </div>
+
       </div>
     </section>
   );

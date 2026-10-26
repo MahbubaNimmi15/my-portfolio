@@ -33,24 +33,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route
           path="/projects/:id"
           element={<ProjectDetails />}
-        />
-
-        <Route
-          path="*"
-          element={
-            <div className="min-h-screen flex flex-col items-center justify-center">
-              <h1 className="text-3xl font-bold">
-                404 - Page Not Found
-              </h1>
-              <a href="/" className="text-cyan-400 mt-5">
-                Back to Home
-              </a>
-            </div>
-          }
         />
       </Routes>
 
